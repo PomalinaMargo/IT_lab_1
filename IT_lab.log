@@ -1,0 +1,333 @@
+2025-10-07 00:47:59,354 - DEBUG - ############# starting app
+2025-10-07 00:48:00,007 - DEBUG - ############# starting app
+2025-10-07 00:48:02,894 - DEBUG - db_name not found in request. Using default db
+2025-10-07 00:48:02,895 - DEBUG - database 'example_db' not found. Creating new database
+2025-10-07 00:48:31,479 - DEBUG - db_name not found in request. Using default db
+2025-10-07 00:48:31,479 - DEBUG - database 'example_db' not found. Creating new database
+2025-10-07 00:48:37,703 - DEBUG - db_name not found in request. Using default db
+2025-10-07 00:48:37,704 - DEBUG - database 'example_db' not found. Creating new database
+2025-10-07 00:51:15,590 - DEBUG - db_name not found in request. Using default db
+2025-10-07 00:51:15,592 - DEBUG - database 'example_db' not found. Creating new database
+2025-10-07 00:55:24,960 - DEBUG - db_name not found in request. Using default db
+2025-10-07 00:55:24,961 - DEBUG - database example_db found. Loading database
+2025-10-07 00:55:24,961 - ERROR - Error loading database 'example_db': Ran out of input
+2025-10-07 00:56:24,054 - DEBUG - saving database 'example_db' to databases/example_db.pkl
+2025-10-07 00:56:32,430 - DEBUG - db_name not found in request. Using default db
+2025-10-07 00:56:32,431 - DEBUG - database example_db found. Loading database
+2025-10-07 00:56:32,432 - DEBUG - GET index from db 'example_db'
+2025-10-07 00:56:32,432 - DEBUG - tables: ['ExampleTable']
+2025-10-07 00:56:37,322 - DEBUG - db_name not found in request. Using default db
+2025-10-07 00:56:37,322 - DEBUG - database example_db found. Loading database
+2025-10-07 00:56:37,322 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 00:56:48,889 - DEBUG - db_name not found in request. Using default db
+2025-10-07 00:56:48,889 - DEBUG - database example_db found. Loading database
+2025-10-07 00:56:48,890 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 00:56:53,642 - DEBUG - db_name not found in request. Using default db
+2025-10-07 00:56:53,642 - DEBUG - database example_db found. Loading database
+2025-10-07 00:56:53,642 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 00:56:55,776 - DEBUG - db_name not found in request. Using default db
+2025-10-07 00:56:55,777 - DEBUG - database example_db found. Loading database
+2025-10-07 00:56:55,777 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 01:07:15,882 - DEBUG - ############# starting app
+2025-10-07 01:07:35,165 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:07:35,167 - DEBUG - database example_db found. Loading database
+2025-10-07 01:07:35,167 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 01:07:38,783 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:07:38,783 - DEBUG - database example_db found. Loading database
+2025-10-07 01:07:38,783 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:08:43,136 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:08:43,137 - DEBUG - database example_db found. Loading database
+2025-10-07 01:08:43,138 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:08:45,961 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:08:45,961 - DEBUG - database example_db found. Loading database
+2025-10-07 01:08:45,961 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:08:45,961 - DEBUG - tables: ['ExampleTable']
+2025-10-07 01:08:47,857 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:08:47,857 - DEBUG - database example_db found. Loading database
+2025-10-07 01:08:47,857 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:08:55,012 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:08:55,012 - DEBUG - database example_db found. Loading database
+2025-10-07 01:08:55,013 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:09:07,737 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:09:07,738 - DEBUG - database example_db found. Loading database
+2025-10-07 01:09:07,738 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:09:08,982 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:09:08,984 - DEBUG - database example_db found. Loading database
+2025-10-07 01:09:08,984 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:09:08,984 - DEBUG - tables: ['ExampleTable']
+2025-10-07 01:09:11,544 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:09:11,544 - DEBUG - database example_db found. Loading database
+2025-10-07 01:09:11,544 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:09:52,863 - DEBUG - ############# starting app
+2025-10-07 01:15:01,512 - DEBUG - ############# starting app
+2025-10-07 01:15:05,200 - DEBUG - ############# starting app
+2025-10-07 01:15:26,175 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:15:26,175 - DEBUG - database example_db found. Loading database
+2025-10-07 01:15:26,176 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:15:27,349 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:15:27,349 - DEBUG - database example_db found. Loading database
+2025-10-07 01:15:27,349 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 01:15:46,041 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:15:46,042 - DEBUG - database example_db found. Loading database
+2025-10-07 01:15:46,042 - DEBUG - POST save_edit/ExampleTable to db 'example_db'
+2025-10-07 01:15:46,043 - DEBUG - saving database 'example_db' to databases/example_db.pkl
+2025-10-07 01:15:48,357 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:15:48,357 - DEBUG - database example_db found. Loading database
+2025-10-07 01:15:48,367 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:15:51,177 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:15:51,178 - DEBUG - database example_db found. Loading database
+2025-10-07 01:15:51,178 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 01:16:47,550 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:16:47,550 - DEBUG - database example_db found. Loading database
+2025-10-07 01:16:47,551 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:16:49,099 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:16:49,099 - DEBUG - database example_db found. Loading database
+2025-10-07 01:16:49,100 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:17:52,888 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:17:52,888 - DEBUG - database example_db found. Loading database
+2025-10-07 01:17:52,888 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:18:25,317 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:18:25,317 - DEBUG - database example_db found. Loading database
+2025-10-07 01:18:25,317 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:18:32,668 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:18:32,668 - DEBUG - database example_db found. Loading database
+2025-10-07 01:18:32,668 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:20:19,047 - DEBUG - ############# starting app
+2025-10-07 01:20:21,260 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:20:21,261 - DEBUG - database example_db found. Loading database
+2025-10-07 01:20:21,261 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:20:23,624 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:20:23,625 - DEBUG - database example_db found. Loading database
+2025-10-07 01:20:23,625 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 01:20:28,527 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:20:28,528 - DEBUG - database example_db found. Loading database
+2025-10-07 01:20:28,528 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:22:04,238 - DEBUG - ############# starting app
+2025-10-07 01:22:11,877 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:22:11,877 - DEBUG - database example_db found. Loading database
+2025-10-07 01:22:11,878 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:22:13,994 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:22:13,994 - DEBUG - database example_db found. Loading database
+2025-10-07 01:22:13,994 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 01:22:19,100 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:22:19,101 - DEBUG - database example_db found. Loading database
+2025-10-07 01:22:19,101 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:22:24,639 - DEBUG - ############# starting app
+2025-10-07 01:22:27,340 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:22:27,341 - DEBUG - database example_db found. Loading database
+2025-10-07 01:22:27,342 - ERROR - Error loading database 'example_db': Can't get attribute 'DateColumn' on <module 'classes' from 'C:\\Users\\m.dubovyk\\Desktop\\IT_lab_part_2-master\\IT_lab_part_2-master\\classes.py'>
+2025-10-07 01:23:40,004 - DEBUG - ############# starting app
+2025-10-07 01:24:12,522 - DEBUG - ############# starting app
+2025-10-07 01:24:13,889 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:24:13,889 - DEBUG - database example_db found. Loading database
+2025-10-07 01:24:13,890 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 01:24:24,691 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:24:24,692 - DEBUG - database example_db found. Loading database
+2025-10-07 01:24:24,692 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:24:24,692 - DEBUG - saving database 'example_db' to databases/example_db.pkl
+2025-10-07 01:24:27,722 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:24:27,722 - DEBUG - database example_db found. Loading database
+2025-10-07 01:24:27,739 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:24:30,835 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:24:30,835 - DEBUG - database example_db found. Loading database
+2025-10-07 01:24:30,836 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 01:24:39,466 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:24:39,466 - DEBUG - database example_db found. Loading database
+2025-10-07 01:24:39,467 - DEBUG - POST save_edit/ExampleTable to db 'example_db'
+2025-10-07 01:24:39,467 - DEBUG - saving database 'example_db' to databases/example_db.pkl
+2025-10-07 01:24:41,380 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:24:41,380 - DEBUG - database example_db found. Loading database
+2025-10-07 01:24:41,391 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:24:43,547 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:24:43,547 - DEBUG - database example_db found. Loading database
+2025-10-07 01:24:43,547 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 01:25:16,564 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:25:16,564 - DEBUG - database example_db found. Loading database
+2025-10-07 01:25:16,564 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:25:17,775 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:25:17,775 - DEBUG - database example_db found. Loading database
+2025-10-07 01:25:17,776 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:25:18,036 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:25:18,037 - DEBUG - database example_db found. Loading database
+2025-10-07 01:25:18,037 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:25:46,219 - DEBUG - ############# starting app
+2025-10-07 01:25:48,910 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:25:48,911 - DEBUG - database example_db found. Loading database
+2025-10-07 01:25:48,912 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:25:51,203 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:25:51,203 - DEBUG - database example_db found. Loading database
+2025-10-07 01:25:51,203 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 01:25:53,410 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:25:53,410 - DEBUG - database example_db found. Loading database
+2025-10-07 01:25:53,411 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:26:26,010 - DEBUG - ############# starting app
+2025-10-07 01:26:39,961 - DEBUG - ############# starting app
+2025-10-07 01:26:49,210 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:26:49,211 - DEBUG - database example_db found. Loading database
+2025-10-07 01:26:49,211 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:26:49,212 - DEBUG - saving database 'example_db' to databases/example_db.pkl
+2025-10-07 01:26:54,020 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:26:54,020 - DEBUG - database example_db found. Loading database
+2025-10-07 01:26:54,029 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:27:03,434 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:27:03,435 - DEBUG - database example_db found. Loading database
+2025-10-07 01:27:03,436 - DEBUG - POST save_rows/ExampleTable to db 'example_db'
+2025-10-07 01:27:03,436 - DEBUG - saving database 'example_db' to databases/example_db.pkl
+2025-10-07 01:27:06,362 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:27:06,363 - DEBUG - database example_db found. Loading database
+2025-10-07 01:27:06,372 - DEBUG - POST edit_table/ExampleTable to db 'example_db'
+2025-10-07 01:27:09,442 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:27:09,442 - DEBUG - database example_db found. Loading database
+2025-10-07 01:27:09,443 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:27:11,396 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:27:11,396 - DEBUG - database example_db found. Loading database
+2025-10-07 01:27:11,397 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:27:11,397 - DEBUG - tables: ['ExampleTable']
+2025-10-07 01:27:16,236 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:27:16,236 - DEBUG - database example_db found. Loading database
+2025-10-07 01:27:16,236 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:27:21,337 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:27:21,338 - DEBUG - database example_db found. Loading database
+2025-10-07 01:27:21,338 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:27:21,338 - DEBUG - tables: ['ExampleTable']
+2025-10-07 01:28:46,839 - DEBUG - ############# starting app
+2025-10-07 01:29:08,983 - DEBUG - ############# starting app
+2025-10-07 01:29:14,087 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:29:14,087 - DEBUG - database example_db found. Loading database
+2025-10-07 01:29:14,088 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:29:14,088 - DEBUG - tables: ['ExampleTable']
+2025-10-07 01:29:20,659 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:29:20,659 - DEBUG - database example_db found. Loading database
+2025-10-07 01:29:20,659 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:29:20,659 - DEBUG - tables: ['ExampleTable']
+2025-10-07 01:31:56,031 - DEBUG - ############# starting app
+2025-10-07 01:32:00,725 - DEBUG - ############# starting app
+2025-10-07 01:32:18,825 - DEBUG - ############# starting app
+2025-10-07 01:32:57,671 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:32:57,672 - DEBUG - database example_db found. Loading database
+2025-10-07 01:32:57,673 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:32:57,674 - DEBUG - tables: ['ExampleTable']
+2025-10-07 01:35:09,123 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:35:09,124 - DEBUG - database example_db found. Loading database
+2025-10-07 01:35:09,125 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:35:09,126 - DEBUG - tables: ['ExampleTable']
+2025-10-07 01:36:00,464 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:00,464 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:00,464 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:36:00,464 - DEBUG - tables: ['ExampleTable']
+2025-10-07 01:36:14,181 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:14,181 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:14,181 - DEBUG - POST add_table/SecondTable to db 'example_db'
+2025-10-07 01:36:14,181 - DEBUG - saving database 'example_db' to databases/example_db.pkl
+2025-10-07 01:36:14,444 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:14,444 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:14,468 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:36:14,468 - DEBUG - tables: ['ExampleTable', 'SecondTable']
+2025-10-07 01:36:16,270 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:16,270 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:16,270 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:36:21,547 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:21,547 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:21,547 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:36:23,057 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:23,058 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:23,058 - DEBUG - POST edit_table/SecondTable to db 'example_db'
+2025-10-07 01:36:34,508 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:34,508 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:34,509 - DEBUG - POST save_edit/SecondTable to db 'example_db'
+2025-10-07 01:36:34,509 - DEBUG - saving database 'example_db' to databases/example_db.pkl
+2025-10-07 01:36:36,201 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:36,201 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:36,213 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:36:39,135 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:39,135 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:39,136 - DEBUG - POST edit_table/SecondTable to db 'example_db'
+2025-10-07 01:36:50,035 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:50,035 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:50,036 - DEBUG - POST save_rows/SecondTable to db 'example_db'
+2025-10-07 01:36:50,036 - DEBUG - saving database 'example_db' to databases/example_db.pkl
+2025-10-07 01:36:51,941 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:51,941 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:51,958 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:36:54,162 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:54,162 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:54,162 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:36:54,162 - DEBUG - tables: ['ExampleTable', 'SecondTable']
+2025-10-07 01:36:55,129 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:55,129 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:55,130 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 01:36:56,075 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:36:56,075 - DEBUG - database example_db found. Loading database
+2025-10-07 01:36:56,075 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:36:56,075 - DEBUG - tables: ['ExampleTable', 'SecondTable']
+2025-10-07 01:37:00,518 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:37:00,518 - DEBUG - database example_db found. Loading database
+2025-10-07 01:37:00,519 - DEBUG - GET get_table/ExampleTable from db 'example_db'
+2025-10-07 01:37:00,521 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:37:00,521 - DEBUG - database example_db found. Loading database
+2025-10-07 01:37:00,522 - DEBUG - GET get_table/SecondTable from db 'example_db'
+2025-10-07 01:37:02,058 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:37:02,058 - DEBUG - database example_db found. Loading database
+2025-10-07 01:38:59,235 - DEBUG - ############# starting app
+2025-10-07 01:39:17,370 - DEBUG - ############# starting app
+2025-10-07 01:39:19,000 - DEBUG - ############# starting app
+2025-10-07 01:39:20,562 - DEBUG - ############# starting app
+2025-10-07 01:40:36,143 - DEBUG - ############# starting app
+2025-10-07 01:40:57,285 - DEBUG - ############# starting app
+2025-10-07 01:40:58,856 - DEBUG - ############# starting app
+2025-10-07 01:41:16,896 - DEBUG - ############# starting app
+2025-10-07 01:41:25,647 - DEBUG - ############# starting app
+2025-10-07 01:41:33,350 - DEBUG - ############# starting app
+2025-10-07 01:41:38,035 - DEBUG - ############# starting app
+2025-10-07 01:42:15,563 - DEBUG - ############# starting app
+2025-10-07 01:42:20,254 - DEBUG - ############# starting app
+2025-10-07 01:43:57,546 - DEBUG - ############# starting app
+2025-10-07 01:44:16,599 - DEBUG - ############# starting app
+2025-10-07 01:44:46,965 - DEBUG - ############# starting app
+2025-10-07 01:45:32,775 - DEBUG - ############# starting app
+2025-10-07 01:45:34,340 - DEBUG - ############# starting app
+2025-10-07 01:46:08,799 - DEBUG - ############# starting app
+2025-10-07 01:52:39,424 - DEBUG - ############# starting app
+2025-10-07 01:52:39,884 - DEBUG - ############# starting app
+2025-10-07 01:52:45,877 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:52:45,878 - DEBUG - database example_db found. Loading database
+2025-10-07 01:52:45,879 - ERROR - Error loading database 'example_db': No module named 'classes'
+2025-10-07 01:53:03,254 - DEBUG - saving database 'example_db' to databases/example_db.pkl
+2025-10-07 01:53:07,997 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:53:07,997 - DEBUG - database example_db found. Loading database
+2025-10-07 01:53:08,008 - DEBUG - GET index from db 'example_db'
+2025-10-07 01:53:08,008 - DEBUG - tables: ['ExampleTable']
+2025-10-07 01:53:10,646 - DEBUG - db_name not found in request. Using default db
+2025-10-07 01:53:10,646 - DEBUG - database example_db found. Loading database
+2025-10-07 01:53:10,647 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 22:18:43,480 - DEBUG - ############# starting app
+2025-10-07 22:18:46,177 - DEBUG - database example_db found. Loading database
+2025-10-07 22:18:46,189 - DEBUG - GET index from db 'example_db'
+2025-10-07 22:18:46,189 - DEBUG - tables: ['ExampleTable']
+2025-10-07 22:18:50,239 - DEBUG - db_name not found in request. Using default db
+2025-10-07 22:18:50,240 - DEBUG - database example_db found. Loading database
+2025-10-07 22:18:50,241 - DEBUG - GET get_table from db 'example_db'
+2025-10-07 22:19:09,737 - DEBUG - db_name not found in request. Using default db
+2025-10-07 22:19:09,737 - DEBUG - database example_db found. Loading database
+2025-10-07 22:19:09,737 - DEBUG - GET index from db 'example_db'
+2025-10-07 22:19:09,737 - DEBUG - tables: ['ExampleTable']
+2025-10-07 22:35:04,163 - DEBUG - ############# starting app
+2025-10-07 22:35:04,622 - DEBUG - ############# starting app
+2025-10-07 22:35:08,060 - DEBUG - db_name not found in request. Using default db
+2025-10-07 22:35:08,061 - DEBUG - database example_db found. Loading database
+2025-10-07 22:35:08,061 - DEBUG - GET index from db 'example_db'
+2025-10-07 22:35:08,061 - DEBUG - tables: ['ExampleTable']
+2025-10-07 22:35:15,320 - DEBUG - saving database 'newDb' to databases/newDb.pkl
+2025-10-07 22:35:15,322 - DEBUG - Created new database 'newDb'
+2025-10-07 22:35:16,745 - DEBUG - database newDb found. Loading database
+2025-10-07 22:35:16,754 - DEBUG - GET index from db 'newDb'
+2025-10-07 22:35:16,754 - DEBUG - tables: []
+2025-10-07 22:35:20,073 - DEBUG - database newDb found. Loading database
+2025-10-07 22:35:20,074 - DEBUG - saving database 'newDb' to databases/newDb.pkl
+2025-10-07 22:35:20,074 - DEBUG - Saved database 'newDb' manually
+2025-10-19 22:57:50,174 - DEBUG - ############# starting app
+2025-10-19 22:57:51,452 - DEBUG - ############# starting app
+2025-10-19 22:57:56,548 - DEBUG - db_name not found in request. Using default db
+2025-10-19 22:57:56,548 - DEBUG - database example_db found. Loading database
+2025-10-19 22:57:56,565 - DEBUG - GET index from db 'example_db'
+2025-10-19 22:57:56,565 - DEBUG - tables: ['ExampleTable']

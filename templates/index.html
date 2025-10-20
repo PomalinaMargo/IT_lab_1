@@ -1,0 +1,360 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ db_name }}</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .table-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .table-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            transition: box-shadow 0.3s;
+        }
+
+        .table-item:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .table-link {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Tables of "{{ db_name }}"</h1>
+
+    <div class="d-flex mb-4">
+        <input type="text" id="newDbName" class="form-control mr-2" placeholder="Enter database name">
+        <button id="createDbBtn" class="btn btn-success mr-2">Create DB</button>
+        <button id="saveDbBtn" class="btn btn-outline-primary">Save DB</button>
+    </div>
+
+    <ul class="list-group">
+        {% for table_name in tables %}
+            <li class="table-item d-flex justify-content-between align-items-center">
+                <a class="table-link" href="{{ url_for('get_table', table_name=table_name) }}">{{ table_name }}</a>
+                <button class="btn btn-danger delete-button" data-table-name="{{ table_name }}">Delete</button>
+            </li>
+        {% endfor %}
+        <div class="mt-4">
+            <div class="form-group">
+                <input type="text" class="form-control" id="newTableName" placeholder="Enter table name">
+            </div>
+            <button class="btn btn-primary add-table-button">Add Table</button>
+        </div>
+
+        <hr class="my-4"/>
+
+        <h3>Join tables</h3>
+        <div class="card p-3 mb-4">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+            <label for="joinTable1">Left table</label>
+            <select id="joinTable1" class="form-control">
+                <option value="">— select —</option>
+                {% for table_name in tables %}
+                <option value="{{ table_name }}">{{ table_name }}</option>
+                {% endfor %}
+            </select>
+            </div>
+
+            <div class="form-group col-md-4">
+            <label for="joinTable2">Right table</label>
+            <select id="joinTable2" class="form-control">
+                <option value="">— select —</option>
+                {% for table_name in tables %}
+                <option value="{{ table_name }}">{{ table_name }}</option>
+                {% endfor %}
+            </select>
+            </div>
+
+            <div class="form-group col-md-4">
+            <label for="joinOnField">Common field (ON)</label>
+            <select id="joinOnField" class="form-control" disabled>
+                <option value="">— select tables first —</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <button id="runJoinBtn" class="btn btn-primary mr-2" disabled>Join</button>
+            <button id="clearJoinBtn" class="btn btn-outline-secondary">Clear</button>
+        </div>
+        </div>
+
+        <div id="joinResult" class="mb-5" style="display:none;">
+        <h4>Join result</h4>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered" id="joinResultTable"></table>
+        </div>
+        </div>
+    </ul>
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Add a click event listener to each delete button
+        document.querySelectorAll('.delete-button').forEach(function (button) {
+            button.addEventListener('click', function () {
+                // Get the table name from the data attribute
+                var tableName = this.getAttribute('data-table-name');
+
+                // Make a DELETE request using fetch API
+                fetch('/del_table/' + tableName, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                        // Add any additional headers if needed
+                    },
+                })
+                .then(function (response) {
+                    // Handle the response (you can customize this part)
+                    if (response.ok) {
+                        // Optionally, update the UI or provide feedback to the user
+                        console.log('Table deleted successfully');
+                        // Reload the page to reflect changes (you can update the UI dynamically instead)
+                        location.reload();
+                    } else {
+                        console.error('Failed to delete table');
+                    }
+                })
+                .catch(function (error) {
+                    console.error('Error:', error);
+                });
+            });
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+            // Delete button click event listener (similar to previous code)
+
+            // Add Table button click event listener
+            document.querySelector('.add-table-button').addEventListener('click', function () {
+                // Get the new table name from the input
+                var newTableName = document.getElementById('newTableName').value;
+
+                // Check if the table name already exists
+                var existingTableNames = Array.from(document.querySelectorAll('.table-link')).map(function(link) {
+                    return link.textContent.trim();
+                });
+
+                if (existingTableNames.includes(newTableName)) {
+                    alert('Table name already exists. Please choose a different name.');
+                    return;
+                }
+
+                // Make a request to the add_table endpoint using fetch API
+                fetch('/add_table/' + newTableName, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                        // Add any additional headers if needed
+                    },
+                })
+                .then(function (response) {
+                    // Handle the response (you can customize this part)
+                    if (response.ok) {
+                        // Optionally, update the UI or provide feedback to the user
+                        console.log('Table added successfully');
+                        // Reload the page to reflect changes (you can update the UI dynamically instead)
+                        location.reload();
+                    } else {
+                        console.error('Failed to add table');
+                    }
+                })
+                .catch(function (error) {
+                    console.error('Error:', error);
+                });
+            });
+        });
+
+        (function () {
+            const sel1 = document.getElementById('joinTable1');
+            const sel2 = document.getElementById('joinTable2');
+            const selOn = document.getElementById('joinOnField');
+            const runBtn = document.getElementById('runJoinBtn');
+            const clearBtn = document.getElementById('clearJoinBtn');
+            const resultWrap = document.getElementById('joinResult');
+            const resultTable = document.getElementById('joinResultTable');
+
+            async function fetchColumns(tableName) {
+                const res = await fetch(`/json_table/${encodeURIComponent(tableName)}`);
+                if (!res.ok) throw new Error('Failed to load table: ' + tableName);
+                const data = await res.json();
+                return data.columns.map(c => c.name);
+            }
+
+            function setOnOptions(commonFields) {
+                selOn.innerHTML = '';
+                if (commonFields.length === 0) {
+                selOn.disabled = true;
+                selOn.innerHTML = '<option value="">— no common fields —</option>';
+                runBtn.disabled = true;
+                return;
+                }
+                selOn.disabled = false;
+                for (const f of commonFields) {
+                const opt = document.createElement('option');
+                opt.value = f;
+                opt.textContent = f;
+                selOn.appendChild(opt);
+                }
+                runBtn.disabled = false;
+            }
+
+            async function updateOnFieldOptions() {
+                const t1 = sel1.value;
+                const t2 = sel2.value;
+                resultWrap.style.display = 'none';
+                resultTable.innerHTML = '';
+
+                if (!t1 || !t2 || t1 === t2) {
+                selOn.disabled = true;
+                selOn.innerHTML = '<option value="">— select tables first —</option>';
+                runBtn.disabled = true;
+                return;
+                }
+
+                try {
+                const [c1, c2] = await Promise.all([fetchColumns(t1), fetchColumns(t2)]);
+                const set2 = new Set(c2);
+                const common = c1.filter(x => set2.has(x));
+                setOnOptions(common);
+                } catch (e) {
+                console.error(e);
+                alert('Error loading columns');
+                selOn.disabled = true;
+                runBtn.disabled = true;
+                }
+            }
+
+            async function doJoin() {
+                const table1 = sel1.value;
+                const table2 = sel2.value;
+                const onField = selOn.value;
+                if (!table1 || !table2 || !onField) return;
+
+                const res = await fetch('/join_tables', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ table1, table2, on: onField })
+                });
+                if (!res.ok) {
+                alert('Join failed');
+                return;
+                }
+                const data = await res.json();
+
+                renderJoinedTable(data);
+            }
+
+            function renderJoinedTable(data) {
+                // header
+                const thead = document.createElement('thead');
+                const headRow = document.createElement('tr');
+                for (const col of data.columns) {
+                const th = document.createElement('th');
+                th.textContent = col.name;
+                headRow.appendChild(th);
+                }
+                thead.appendChild(headRow);
+
+                const tbody = document.createElement('tbody');
+                for (const row of data.rows) {
+                const tr = document.createElement('tr');
+                for (const cell of row) {
+                    const td = document.createElement('td');
+                    td.textContent = (cell === null || cell === undefined) ? '' : cell;
+                    tr.appendChild(td);
+                }
+                tbody.appendChild(tr);
+                }
+
+                resultTable.innerHTML = '';
+                resultTable.appendChild(thead);
+                resultTable.appendChild(tbody);
+                resultWrap.style.display = 'block';
+            }
+
+            function clearJoinUI() {
+                sel1.value = '';
+                sel2.value = '';
+                selOn.innerHTML = '<option value="">— select tables first —</option>';
+                selOn.disabled = true;
+                runBtn.disabled = true;
+                resultWrap.style.display = 'none';
+                resultTable.innerHTML = '';
+            }
+
+            sel1.addEventListener('change', updateOnFieldOptions);
+            sel2.addEventListener('change', updateOnFieldOptions);
+            runBtn.addEventListener('click', doJoin);
+            clearBtn.addEventListener('click', clearJoinUI);
+        })();
+
+        document.getElementById('createDbBtn').addEventListener('click', function() {
+            const dbName = document.getElementById('newDbName').value.trim();
+            if (!dbName) {
+                alert('Please enter a database name');
+                return;
+            }
+
+            fetch('/create_db', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ db_name: dbName })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    alert(`Database '${data.db_name}' created successfully`);
+                    window.location.href = '/?db_name=' + encodeURIComponent(data.db_name);
+                } else {
+                    alert('Error creating database');
+                }
+            })
+            .catch(err => console.error(err));
+        });
+
+        document.getElementById('saveDbBtn').addEventListener('click', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const dbName = urlParams.get('db_name') || 'example_db';
+
+            fetch('/save_db?db_name=' + encodeURIComponent(dbName), { method: 'POST' })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) {
+                        alert(`Database '${data.db_name}' saved successfully`);
+                    } else {
+                        alert('Failed to save database');
+                    }
+                })
+                .catch(err => console.error(err));
+        });
+</script>
+</body>
+</html>
