@@ -1,0 +1,91 @@
+📌 Опис проєкту
+
+Цей репозиторій містить реалізацію лабораторної роботи з предмету “Проміжна СУБД / IT_lab”.
+Проєкт є спрощеною системою управління базою даних (partial DBMS) з можливістю: створення таблиць, додавання та редагування рядків, збереження структури таблиць у JSON, відображення таблиці у HTML, базова логіка роботи з рядками та колонками.
+
+Проєкт побудований на Python та Flask.
+
+📁 Структура проєкту
+IT_lab_1/
+├── app.py                 # Flask застосунок
+├── core/                  # Основна логіка "DBMS"
+│   ├── table.py
+│   ├── column.py
+│   ├── row.py
+│   └── ...
+├── templates/             # HTML-шаблони
+│   ├── index.html
+│   ├── table_scene.html
+│   ├── edit_rows.html
+│   └── ...
+├── unit_tests.py          # Тести
+├── requirements.txt       # Залежності
+└── README.md              # Цей файл
+
+You can add a badge for your workflow like this (Markdown):
+
+![CI](https://github.com/PomalinaMargo/IT_lab_1/actions/workflows/ci.yml/badge.svg)
+
+⚙️ Встановлення та запуск
+1. Клонування репозиторію
+git clone https://github.com/PomalinaMargo/IT_lab_1
+cd IT_lab_1
+
+2. Встановлення залежностей
+pip install -r requirements.txt
+
+3. Запуск застосунку
+python app.py
+
+🧪 Запуск тестів
+
+У проєкті є файл unit_tests.py.
+Запуск тестів:
+
+python -m unittest unit_tests.py
+
+🚀 CI/CD — GitHub Actions
+
+У репозиторії налаштований workflow:
+
+запускається при push і pull_request у main;
+
+перевіряє проєкт на трьох ОС: Ubuntu, Windows, macOS
+
+встановлює залежності з requirements.txt, запускає тести, зберігає логи тестів як артефакти, кешує залежності pip.
+
+Бейдж статусу CI знаходиться вгорі README (зелений = успішно).
+
+Файл workflow:
+
+.github/workflows/ci.yml
+
+📦 Артефакти тестів
+
+Після кожного запуску CI у вкладці Actions → конкретний run
+можна завантажити:
+
+test-logs-ubuntu-latest
+
+test-logs-windows-latest
+
+test-logs-macos-latest
+
+Це лог файли з результатами тестів.
+
+📚 Використані технології
+
+Python 3.10
+
+Flask
+
+unittest
+
+GitHub Actions
+
+HTML, Bootstrap (у шаблонах)
+
+✨ Автор
+
+Маргарита (PomalinaMargo)
+КНУ ім. Шевченка, факультет Кібернетики.
